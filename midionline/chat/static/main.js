@@ -77,7 +77,7 @@ function end(){
   player.stop(audioContext.currentTime + 10)
 }
 
-var instrument = 'static/media/cowbell.wav'
+var instrument = 'static/media/Cowbell.wav'
 
 function play (pitch,frequency) {
   getSample(instrument, function buff (buffer) {
