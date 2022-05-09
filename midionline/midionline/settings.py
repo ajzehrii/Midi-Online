@@ -54,7 +54,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
 
-ROOT_URLCONF = 'newmixer.urls'
+ROOT_URLCONF = 'midionline.urls'
 CORS_ORIGIN_ALLOW_ALL = True
 
 TEMPLATES = [
@@ -73,7 +73,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'newmixer.wsgi.application'
+WSGI_APPLICATION = 'midionline.wsgi.application'
 
 
 # Database
