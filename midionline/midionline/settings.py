@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-tj@4hil4#k-a(mph_c+v$y#k#c!z%b*@@lxdhqp8+45)z#hmn+
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['midi-online.herokuapp.com']
+ALLOWED_HOSTS = ['midi-online.herokuapp.com','localhost']
 
 
 # Application definition
