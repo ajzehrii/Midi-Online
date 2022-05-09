@@ -1,0 +1,35 @@
+<!DOCTYPE HTML>
+
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Midi Maker Online</title>
+  <script src="{% static 'main.js'%}"></script>
+  <link rel="stylesheet" href="{% static 'main.css'%}" media="screen">
+  <link rel='prefetch' href="{% static 'media/piano.wav'%}">
+</head>
+<body>
+    <div class = "hub">
+        <div id = "octave-select">
+            <button class='scroll' onclick="octaveDown()"> < </button>
+            <h2> 0 </h2>
+            <button class='scroll' onclick="octaveUp()"> > </button>
+        </div>
+        <div id= "sound">
+            <button onclick="myFunction()" class="dropbtn">$</button>
+            <div id="myDropdown" class="dropdown-content">
+                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
+                <a onclick="updateIn('Cowbell')">Cowbell</a>
+                <a onclick="updateIn('Beep')">Beep</a>
+                <a onclick="updateIn('Piano')">Piano</a>
+                <a onclick="updateIn('Voice')">Voice</a>
+            </div>
+        </div>
+    </div>
+    <div class = "keyboard" onmousedown = "clicked()" onmouseup ="unclicked()">
+        <ul id = "keys">
+        </ul>
+    </div>
+</body>
+</html>

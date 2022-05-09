@@ -1,0 +1,29 @@
+<!DOCTYPE HTML>
+
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Midi Maker Online</title>
+  <script src="{% static 'main.js'%}"></script>
+  <link rel="stylesheet" href="{% static 'main.css'%}" media="screen">
+</head>
+<body>
+    <div class = "keyboard" onmousedown = "clicked()" onmouseup ="unclicked()">
+        <ul class = "keys">
+            <button class='white' onmousedown = "keytap(3,16.351)" onmouseover = "keyslide(3,16.351)" onmouseup="end()" onmouseout = "end()">C</button>
+            <button class='black' onmousedown=  "keytap(3,17.324)" onmouseover = "keyslide(3,17.324)" onmouseup="end()" onmouseout = "end()">C#</button>
+            <button class='white' onmousedown = "keytap(3,18.354)" onmouseover = "keyslide(3,18.354)" onmouseup="end()" onmouseout = "end()">D</button>
+            <button class='black' onmousedown=  "keytap(3,19.445)" onmouseover = "keyslide(3,19.445)" onmouseup="end()" onmouseout = "end()">D#</button>
+            <button class='white' onmousedown = "keytap(3,20.601)" onmouseover = "keyslide(3,20.601)" onmouseup="end()" onmouseout = "end()">E</button>
+            <button class='white' onmousedown=  "keytap(3,21.827)" onmouseover = "keyslide(3,21.827)" onmouseup="end()" onmouseout = "end()">F</button>
+            <button class='black' onmousedown = "keytap(3,23.124)" onmouseover = "keyslide(3,23.124)" onmouseup="end()" onmouseout = "end()">F#</button>
+            <button class='white' onmousedown=  "keytap(3,24.499)" onmouseover = "keyslide(3,24.499)" onmouseup="end()" onmouseout = "end()">G</button>
+            <button class='black' onmousedown = "keytap(3,25.956)" onmouseover = "keyslide(3,25.956)" onmouseup="end()" onmouseout = "end()">G#</button>
+            <button class='white' onmousedown=  "keytap(3,27.500)" onmouseover = "keyslide(3,27.500)" onmouseup="end()" onmouseout = "end()">A</button>
+            <button class='black' onmousedown = "keytap(3,29.135)" onmouseover = "keyslide(3,29.135)" onmouseup="end()" onmouseout = "end()">A#</button>
+            <button class='white' onmousedown=  "keytap(3,30.868)" onmouseover = "keyslide(3,30.868)" onmouseup="end()" onmouseout = "end()">B</button>
+        </ul>
+    </div>
+</body>
+</html>
