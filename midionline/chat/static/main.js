@@ -134,10 +134,10 @@ document.addEventListener('keydown', (event) => {
     keytap2(8)
     document.getElementById("g#1").style.background = "#979797";
   }else if (keyName === '.') {
-    keytap2(9)
+    keytap2(10)
     document.getElementById("a#1").style.background = "#979797";
   }else if (keyName === ',') {
-    keytap2(10)
+    keytap2(9)
     document.getElementById("a1").style.background = "#979797";
   }else if (keyName === '/') {
     keytap2(11)
