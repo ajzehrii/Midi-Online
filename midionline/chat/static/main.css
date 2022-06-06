@@ -2,6 +2,7 @@ body{
   height: 100vh;
   overflow: hidden;
   margin: 0;
+  background-color: black;
 }
 
 
@@ -25,6 +26,23 @@ body{
   display: inline-flex;
   flex-wrap: wrap;
   gap: 12px;
+}
+
+.button-container {
+  float:right;
+  width: 43vh;
+  height: 45.5vh;
+  background: rgb(41, 41, 41);
+  overflow-y: auto;
+}
+
+.button-container > button {
+  width: 25%;
+  height: 10vh;
+  float: left;
+  background: rgb(68, 68, 68);   
+  margin: 15px;
+  margin-top: 25px;
 }
 
 .keyboard{
@@ -86,6 +104,21 @@ button.white {
     border-width: 1px;
     height:45vh;
     width:6.3%;
+}
+
+
+button.drums {
+  background-color:#9c9c9c;
+  box-shadow: 20px 20px 50px 10px rgb(126, 126, 126) inset;
+  color: rgb(165, 164, 164);
+  outline:black; 
+  border-radius:0.3em;
+  z-index:1;
+  border-width: 1px;
+}
+button.drums:active{
+  background-color:#d10303d7;
+
 }
 
 button.black:active{

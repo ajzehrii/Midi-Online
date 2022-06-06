@@ -244,6 +244,44 @@ function play (pitch,frequency) {
 }
 
 
+function playdrum (drum) {
+  getSample("static/media/"+drum+".wav", function buff (buffer) {
+    player = audioContext.createBufferSource()
+    player.buffer = buffer
+    player.connect(audioContext.destination)
+    player.start(startTime)
+
+    player.detune.value = 0 * 100
+    player.playbackRate.value = Math.pow(2, 0 / 12)
+
+  })
+}
+
+
+loopplayer = audioContext.createBufferSource()
+looppressed = false
+function playloop (drum) {
+  if (looppressed) {
+    looppressed = false
+    loopplayer.stop()
+    document.getElementById(drum).style.background = "#9c9c9c";
+  }else{
+    getSample("static/media/"+drum+".wav", function buff (buffer) {
+      loopplayer = audioContext.createBufferSource()
+      loopplayer.buffer = buffer
+      loopplayer.connect(audioContext.destination)
+      loopplayer.start(startTime)
+      looppressed = true
+
+      document.getElementById(drum).style.background = "#d10303d7";
+
+      loopplayer.detune.value = 0 * 100
+      loopplayer.playbackRate.value = Math.pow(2, 0 / 12)
+
+    })
+  }
+}
+
 
 function getSample (url, cb) {
     var request = new XMLHttpRequest()
@@ -272,6 +310,15 @@ function myKeys() {
 
 function mySynth() {
   document.getElementById("mySynth").classList.toggle("show2");
+}
+function myLeads() {
+  document.getElementById("myLeads").classList.toggle("show2");
+}
+function myVocals() {
+  document.getElementById("myVocals").classList.toggle("show2");
+}
+function myBass() {
+  document.getElementById("myBass").classList.toggle("show2");
 }
 
 function filterFunction() {

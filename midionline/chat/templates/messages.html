@@ -11,14 +11,19 @@
 </head>
 <body>
     <div class = "hub">
-        <div class="flex-gap">
-            <div>1</div>
-            <div>2</div>
-            <div>3</div>
-            <div>4</div>
-            <div>5</div>
-            <div>6</div>
-          </div>
+        <div class="menu-container">
+            <div class="button-container">
+               <button id = "120" onclick="playloop('120')" class="drums">7</button>
+               <button id = "140" onclick="playloop('140')" class="drums">8</button>
+               <button id = "150" onclick="playloop('150')" class="drums">9</button>
+               <button onclick="playdrum('Perc')" class="drums">4</button>
+               <button onclick="playdrum('ohi')" class="drums">5</button>
+               <button onclick="playdrum('Roll')" class="drums">6</button>
+               <button onclick="playdrum('Kick')" class="drums">1</button>
+               <button onclick="playdrum('Clap')" class="drums">2</button>
+               <button onclick="playdrum('chi')" class="drums">3</button>
+            </div>
+        </div>
     </div>
     <div id = "bet" class = "keyboard" onmousedown = "clicked()" onmouseup ="unclicked()">
         <div class = "keyhub">
@@ -40,22 +45,26 @@
                         <a onclick="updateIn('Grand')">Grand</a>
                         <a onclick="updateIn('Electric')">Electric</a>
                         <a onclick="updateIn('Vamp')">Vamp</a>
-                        <a onclick="updateIn('Press')">Press</a>
-                        <a onclick="updateIn('Save it')">Save it</a>
-                        <a onclick="updateIn('Shimmer')">Shimmer</a>
-                        <a onclick="updateIn('Space')">Space</a>
                     </div> 
-                    <a onclick="updateIn('Cowbell')">Cowbell</a>
-                    <a onclick="updateIn('Beep')">Beep</a>
-                    <a onclick="updateIn('Piano')">Piano</a>
-                    <a onclick="updateIn('Voice')">Voice</a>
-                    <a onclick="updateIn('Sax')">Sax</a>
-                    <a onclick="updateIn('Guitar')">Guitar</a>
-                    <a onclick="updateIn('Karl')">Karl</a>
-                    <a onclick="updateIn('Jayy')">Jayy</a>
-                    <a onclick="updateIn('Spinz808')">Spinz808</a>
-                    <a onclick="updateIn('Zay808')">Zay808</a>
-                    <a onclick="updateIn('Snore')">Snore</a>
+                    <a onclick="myLeads()">Leads</a>
+                    <div id="myLeads" class="Keys">
+                        <a onclick="updateIn('Beep')">Beep</a>
+                        <a onclick="updateIn('Cowbell')">Cowbell</a>
+                        <a onclick="updateIn('Guitar')">Guitar</a>
+                        <a onclick="updateIn('Sax')">Sax</a>
+                    </div> 
+                    <a onclick="myVocals()">Vocals</a>
+                    <div id="myVocals" class="Keys">
+                        <a onclick="updateIn('Voice')">Voice</a>
+                        <a onclick="updateIn('Karl')">Lrxk</a>
+                        <a onclick="updateIn('Jayy')">Uptown</a>
+                        <a onclick="updateIn('Snore')">Meme</a>
+                    </div> 
+                    <a onclick="myBass()">Bass</a>
+                    <div id="myBass" class="Keys">
+                        <a onclick="updateIn('Spinz808')">Spinz808</a>
+                        <a onclick="updateIn('Zay808')">Zay808</a>
+                    </div> 
                 </div> 
             </div>
             
