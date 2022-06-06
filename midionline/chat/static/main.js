@@ -145,6 +145,10 @@ document.addEventListener('keydown', (event) => {
   }else if (keyName === 'Shift') {
     keytap2(12)
     document.getElementById("c3").style.background = "#979797";
+  }else if (keyName === 'ArrowRight'){
+    octaveUp();
+  }else if (keyName === 'ArrowLeft'){
+    octaveDown();
   }
 }, false);
 
@@ -260,6 +264,14 @@ function updateIn(inst){
 
 function myFunction() {
   document.getElementById("myDropdown").classList.toggle("show");
+}
+
+function myKeys() {
+  document.getElementById("myKeys").classList.toggle("show2");
+}
+
+function mySynth() {
+  document.getElementById("mySynth").classList.toggle("show2");
 }
 
 function filterFunction() {

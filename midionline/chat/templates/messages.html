@@ -11,32 +11,64 @@
 </head>
 <body>
     <div class = "hub">
-        <div id = "octave-select">
-            <button class='scroll' onclick="octaveDown()"> < </button>
-            <h2> 0 </h2>
-            <button class='scroll' onclick="octaveUp()"> > </button>
-        </div>
-        <div id= "sound">
-            <button onclick="myFunction()" class="dropbtn">$</button>
-            <div id="myDropdown" class="dropdown-content">
-                <input type="text" placeholder="Search.." id="myInput" onkeyup="filterFunction()">
-                <a onclick="updateIn('Cowbell')">Cowbell</a>
-                <a onclick="updateIn('Beep')">Beep</a>
-                <a onclick="updateIn('Piano')">Piano</a>
-                <a onclick="updateIn('Voice')">Voice</a>
-                <a onclick="updateIn('Sax')">Sax</a>
-                <a onclick="updateIn('Guitar')">Guitar</a>
-                <a onclick="updateIn('Karl')">Karl</a>
-                <a onclick="updateIn('Jayy')">Jayy</a>
-                <a onclick="updateIn('Spinz808')">Spinz808</a>
-                <a onclick="updateIn('Zay808')">Zay808</a>
-                <a onclick="updateIn('Snore')">Snore</a>
-            </div> 
-        </div>
+        <div class="flex-gap">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+          </div>
     </div>
-    <div class = "keyboard" onmousedown = "clicked()" onmouseup ="unclicked()">
-        <ul id = "keys">
-        </ul>
+    <div id = "bet" class = "keyboard" onmousedown = "clicked()" onmouseup ="unclicked()">
+        <div class = "keyhub">
+            <div id= "sound">
+                <a onclick="myFunction()" class="dropbtn">♪</a>
+                <div id="myDropdown" class="dropdown-content">
+                    <a onclick="mySynth()">Synth</a>
+                    <div id="mySynth" class="Keys">
+                        <a onclick="updateIn('Closely')">Closely</a>
+                        <a onclick="updateIn('Ethereal')">Ethereal</a>
+                        <a onclick="updateIn('Money')">Money</a>
+                        <a onclick="updateIn('Press')">Press</a>
+                        <a onclick="updateIn('Save it')">Save it</a>
+                        <a onclick="updateIn('Shimmer')">Shimmer</a>
+                        <a onclick="updateIn('Space')">Space</a>
+                    </div> 
+                    <a onclick="myKeys()">Keys</a>
+                    <div id="myKeys" class="Keys">
+                        <a onclick="updateIn('Grand')">Grand</a>
+                        <a onclick="updateIn('Electric')">Electric</a>
+                        <a onclick="updateIn('Vamp')">Vamp</a>
+                        <a onclick="updateIn('Press')">Press</a>
+                        <a onclick="updateIn('Save it')">Save it</a>
+                        <a onclick="updateIn('Shimmer')">Shimmer</a>
+                        <a onclick="updateIn('Space')">Space</a>
+                    </div> 
+                    <a onclick="updateIn('Cowbell')">Cowbell</a>
+                    <a onclick="updateIn('Beep')">Beep</a>
+                    <a onclick="updateIn('Piano')">Piano</a>
+                    <a onclick="updateIn('Voice')">Voice</a>
+                    <a onclick="updateIn('Sax')">Sax</a>
+                    <a onclick="updateIn('Guitar')">Guitar</a>
+                    <a onclick="updateIn('Karl')">Karl</a>
+                    <a onclick="updateIn('Jayy')">Jayy</a>
+                    <a onclick="updateIn('Spinz808')">Spinz808</a>
+                    <a onclick="updateIn('Zay808')">Zay808</a>
+                    <a onclick="updateIn('Snore')">Snore</a>
+                </div> 
+            </div>
+            
+        </div>
+        <div id = "lowkey">
+            <div id = "octave-select">
+                <button class='scroll' onclick="octaveDown()"> < </button>
+                <h2> 0 </h2>
+                <button class='scroll' onclick="octaveUp()"> > </button>
+            </div>
+            <ul id = "keys">
+            </ul>
+        </div>
     </div>
 </body>
 </html>
