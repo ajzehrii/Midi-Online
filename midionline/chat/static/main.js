@@ -149,6 +149,30 @@ document.addEventListener('keydown', (event) => {
     octaveUp();
   }else if (keyName === 'ArrowLeft'){
     octaveDown();
+  }else if (keyName === '1'){
+    playdrum('Kick');
+    document.getElementById("Kick").style.background = "#d10303d7";
+  }else if (keyName === '2'){
+    playdrum('Clap');
+    document.getElementById("Clap").style.background = "#d10303d7";
+  }else if (keyName === '3'){
+    playdrum('chi');
+    document.getElementById("chi").style.background = "#d10303d7";
+  }else if (keyName === '4'){
+    playdrum('Perc');
+    document.getElementById("Clap").style.background = "#d10303d7";
+  }else if (keyName === '5'){
+    playdrum('ohi');
+    document.getElementById("Clap").style.background = "#d10303d7";
+  }else if (keyName === '6'){
+    playdrum('Roll');
+    document.getElementById("Roll").style.background = "#d10303d7";
+  }else if (keyName === '7'){
+    playloop("120")
+  }else if (keyName === '8'){
+    playloop("140");
+  }else if (keyName === '9'){
+    playloop("150")
   }
 }, false);
 
@@ -207,6 +231,18 @@ document.addEventListener('keyup', (event) => {
     document.getElementById("b1").style.background = "#ffffff";
   }else if (keyName === 'Shift') {
     document.getElementById("c3").style.background = "#ffffff";
+  }else if (keyName === '1'){
+    document.getElementById("Kick").style.background = "#9c9c9c";
+  }else if (keyName === '2'){
+    document.getElementById("Clap").style.background = "#9c9c9c";
+  }else if (keyName === '3'){
+    document.getElementById("chi").style.background = "#9c9c9c";
+  }else if (keyName === '4'){
+    document.getElementById("Clap").style.background = "#9c9c9c";
+  }else if (keyName === '5'){
+    document.getElementById("Clap").style.background = "#9c9c9c";
+  }else if (keyName === '6'){
+    document.getElementById("Roll").style.background = "#9c9c9c";
   }
 }, false);
 
