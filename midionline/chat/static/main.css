@@ -15,6 +15,7 @@ body{
   
 }
 #octave-select h2{
+  font-family: "Lucida Console", "Courier New", monospace;
   color: white;
   font-size:20px;
 }
@@ -30,17 +31,18 @@ body{
 
 .button-container {
   float:right;
-  width: 43vh;
   height: 45.5vh;
-  background: rgb(41, 41, 41);
+  background: rgba(41, 41, 41, 0.397);
   overflow-y: auto;
+  margin-right: -2.4vh;
 }
 
 .button-container > button {
   width: 25%;
+  overflow: hidden;
   height: 10vh;
   float: left;
-  background: rgb(68, 68, 68);   
+  background: rgb(62, 80, 67);   
   margin: 15px;
   margin-top: 25px;
 }
@@ -51,11 +53,11 @@ body{
   margin:auto;
   margin-left: 3px;
   margin-right: 3px;
-  border:1px solid #160801;
-  background-color: #009919c0;
+  border:1px solid #000000;
+  background-color: #00440bc0;
   border-radius:1em;
   padding:4vh 0 0 5vh;
-  box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
+  box-shadow: 0px 20px 80px 20px rgb(0, 0, 0) inset;
 }
 
 
@@ -82,9 +84,10 @@ button.scroll{
 button.black {
     margin:0;
     background-color:#0a0a23;
-    color: #3a3a3a;
+    color: #303030;
     margin:0 -1.7% 0 -1.7%;
     border:none; 
+    font-family: "Lucida Console", "Courier New", monospace;
     position: relative;
     z-index:2;
     border-radius:0.2em;
@@ -97,7 +100,8 @@ button.black {
 button.white {
     background-color:#ffffff;
     box-shadow: 20px 20px 50px 10px rgb(250, 250, 250) inset;
-    color: rgb(150, 150, 150);
+    color: rgb(221, 221, 221);
+    font-family: "Lucida Console", "Courier New", monospace;
     outline:black; 
     border-radius:0.3em;
     z-index:1;
@@ -108,9 +112,9 @@ button.white {
 
 
 button.drums {
-  background-color:#9c9c9c;
+  background-color:#869b87;
   box-shadow: 20px 20px 50px 10px rgb(126, 126, 126) inset;
-  color: rgb(165, 164, 164);
+  color: rgba(2, 192, 43, 0.685);
   outline:black; 
   border-radius:0.3em;
   z-index:1;
@@ -167,9 +171,10 @@ button.white:active{
   z-index: 99;
   margin:auto;
   margin-top: .3vh;
+  border: #005e14;
   display: none;
   position:absolute;
-  background-color: #f1f1f1;
+  background-color: #000000;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -178,18 +183,21 @@ button.white:active{
   transform-origin: top center;
   z-index: 99;
   display: none;
-  background-color: #f1f1f1;
+  background-color: #002508;
 }
 
 .dropdown-content a {
-  color: black;
+  outline-width: 2px;
+  outline-color: #005e14;
+  font-family: "Lucida Console", "Courier New", monospace;
+  color: white;
   margin: auto;
   padding: 5px 5px;
   text-decoration: none;
   display: flex;
 }
 
-.dropdown-content a:hover {background-color: #ddd}
+.dropdown-content a:hover {background-color: rgba(221, 221, 221, 0.411)}
 
 #lowkey{
   transition: all .25s;
