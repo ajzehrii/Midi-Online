@@ -72,79 +72,79 @@ document.addEventListener('keydown', (event) => {
 
   if (keyName === 'a') {
     keytap(0)
-    document.getElementById("c").style.background = "#979797";
+    document.getElementById("c").style.background = "#6B6E70";
   }else if (keyName === 'w') {
     keytap(1)
-    document.getElementById("c#").style.background = "#979797";
+    document.getElementById("c#").style.background = "#6B6E70";
   }else if (keyName === 's') {
     keytap(2)
-    document.getElementById("d").style.background = "#979797";
+    document.getElementById("d").style.background = "#6B6E70";
   }else if (keyName === 'e') {
     keytap(3)
-    document.getElementById("d#").style.background = "#979797";
+    document.getElementById("d#").style.background = "#6B6E70";
   }else if (keyName === 'd') {
     keytap(4)
-    document.getElementById("e").style.background = "#979797";
+    document.getElementById("e").style.background = "#6B6E70";
   }else if (keyName === 'f') {
     keytap(5)
-    document.getElementById("f").style.background = "#979797";
+    document.getElementById("f").style.background = "#6B6E70";
   }else if (keyName === 't') {
     keytap(6)
-    document.getElementById("f#").style.background = "#979797";
+    document.getElementById("f#").style.background = "#6B6E70";
   }else if (keyName === 'g') {
     keytap(7)
-    document.getElementById("g").style.background = "#979797";
+    document.getElementById("g").style.background = "#6B6E70";
   }else if (keyName === 'y') {
     keytap(8)
-    document.getElementById("g#").style.background = "#979797";
+    document.getElementById("g#").style.background = "#6B6E70";
   }else if (keyName === 'u') {
     keytap(10)
-    document.getElementById("a#").style.background = "#979797";
+    document.getElementById("a#").style.background = "#6B6E70";
   }else if (keyName === 'h') {
     keytap(9)
-    document.getElementById("a").style.background = "#979797";
+    document.getElementById("a").style.background = "#6B6E70";
   }else if (keyName === 'j') {
     keytap(11)
-    document.getElementById("b").style.background = "#979797";
+    document.getElementById("b").style.background = "#6B6E70";
   }else if (keyName === 'k') {
     keytap2(0)
-    document.getElementById("c1").style.background = "#979797";
+    document.getElementById("c1").style.background = "#6B6E70";
   }else if (keyName === 'o') {
     keytap2(1)
-    document.getElementById("c#1").style.background = "#979797";
+    document.getElementById("c#1").style.background = "#6B6E70";
   }else if (keyName === 'l') {
     keytap2(2)
-    document.getElementById("d1").style.background = "#979797";
+    document.getElementById("d1").style.background = "#6B6E70";
   }else if (keyName === 'p') {
     keytap2(3)
-    document.getElementById("d#1").style.background = "#979797";
+    document.getElementById("d#1").style.background = "#6B6E70";
   }else if (keyName === ';') {
     keytap2(4)
-    document.getElementById("e1").style.background = "#979797";
+    document.getElementById("e1").style.background = "#6B6E70";
   }else if (keyName === '\'') {
     keytap2(5)
-    document.getElementById("f1").style.background = "#979797";
+    document.getElementById("f1").style.background = "#6B6E70";
   }else if (keyName === ']') {
     keytap2(6)
-    document.getElementById("f#1").style.background = "#979797";
+    document.getElementById("f#1").style.background = "#6B6E70";
   }else if (keyName === 'Enter') {
     keytap2(7)
-    document.getElementById("g1").style.background = "#979797";
+    document.getElementById("g1").style.background = "#6B6E70";
   }else if (keyName === '\\') {
     keytap2(8)
-    document.getElementById("g#1").style.background = "#979797";
+    document.getElementById("g#1").style.background = "#6B6E70";
   }else if (keyName === '.') {
     keytap2(10)
-    document.getElementById("a#1").style.background = "#979797";
+    document.getElementById("a#1").style.background = "#6B6E70";
   }else if (keyName === ',') {
     keytap2(9)
-    document.getElementById("a1").style.background = "#979797";
+    document.getElementById("a1").style.background = "#6B6E70";
   }else if (keyName === '/') {
     keytap2(11)
-    document.getElementById("b1").style.background = "#979797";
+    document.getElementById("b1").style.background = "#6B6E70";
   }else if (keyName === 'Shift') {
     keytap2(12)
-    document.getElementById("c3").style.background = "#979797";
+    document.getElementById("c3").style.background = "#6B6E70";
   }else if (keyName === 'ArrowRight'){
     octaveUp();
   }else if (keyName === 'ArrowLeft'){
@@ -257,8 +257,18 @@ var player
 function end(){
   player.stop(audioContext.currentTime + 10)
 }
+/*
+#61892F
+#86c232
+#222629
+#474B4F
+#6B6E70
 
-var instrument = 'static/media/Cowbell.wav'
+#e3f1e8
+#F2F2F2
+
+*/
+var instrument = 'static/media/Grand.mp3'
 
 function play (pitch,frequency) {
   getSample(instrument, function buff (buffer) {
@@ -281,7 +291,7 @@ function play (pitch,frequency) {
 
 
 function playdrum (drum) {
-  getSample("static/media/"+drum+".wav", function buff (buffer) {
+  getSample("static/media/"+drum+".mp3", function buff (buffer) {
     player = audioContext.createBufferSource()
     player.buffer = buffer
     player.connect(audioContext.destination)
@@ -302,7 +312,7 @@ function playloop (drum) {
     loopplayer.stop()
     document.getElementById(drum).style = 'button.drums';
   }else{
-    getSample("static/media/"+drum+".wav", function buff (buffer) {
+    getSample("static/media/"+drum+".mp3", function buff (buffer) {
       loopplayer = audioContext.createBufferSource()
       loopplayer.buffer = buffer
       loopplayer.connect(audioContext.destination)
@@ -331,7 +341,7 @@ function getSample (url, cb) {
 }
   
 function updateIn(inst){
-  instrument = 'static/media/'+inst+'.wav'
+  instrument = 'static/media/'+inst+'.mp3'
   document.getElementById("myDropdown").classList.toggle("show");
 }
 

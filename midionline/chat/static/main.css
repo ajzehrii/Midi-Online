@@ -2,7 +2,7 @@ body{
   height: 100vh;
   overflow: hidden;
   margin: 0;
-  background-color: black;
+  background-color: #222629;
 }
 
 
@@ -10,13 +10,14 @@ body{
 
 #octave-select{
   display: flex;
+  color: #86c232;
   margin: 12px 0 0 12px;
   margin-top: -2.5vh;
   
 }
 #octave-select h2{
   font-family: "Lucida Console", "Courier New", monospace;
-  color: white;
+  color: #86c232;
   font-size:20px;
 }
 
@@ -32,13 +33,14 @@ body{
 .button-container {
   float:right;
   height: 45.5vh;
-  background: rgba(41, 41, 41, 0.397);
+  background: #474B4F;
   overflow-y: auto;
-  margin-right: -2.4vh;
+  padding-top: 0.3vh;
+  margin-right: -5.85vh;
 }
 
 .button-container > button {
-  width: 25%;
+  width: 23%;
   overflow: hidden;
   height: 10vh;
   float: left;
@@ -53,11 +55,10 @@ body{
   margin:auto;
   margin-left: 3px;
   margin-right: 3px;
-  border:1px solid #000000;
-  background-color: #00440bc0;
-  border-radius:1em;
+  border:1px solid #222629;
+  background-color: #222629;
   padding:4vh 0 0 5vh;
-  box-shadow: 0px 20px 80px 20px rgb(0, 0, 0) inset;
+  box-shadow: 0px 20px 50px 50px #222629 inset;
 }
 
 
@@ -76,49 +77,54 @@ body{
 
 button.scroll{
     background-color:#ffffff00;
-    color: rgb(255, 255, 255);
+    color: #86c232;
     border:rgba(0, 0, 0, 0); 
     min-height:30px; 
     min-width: 200px;
+    cursor: pointer;
 }
 button.black {
     margin:0;
-    background-color:#0a0a23;
+    background-color:#000000;
     color: #303030;
     margin:0 -1.7% 0 -1.7%;
     border:none; 
     font-family: "Lucida Console", "Courier New", monospace;
     position: relative;
     z-index:2;
-    border-radius:0.2em;
     height:28vh;
     width:3.4%;
+    cursor: pointer;
 }
 
 
 button.white {
-    background-color:#ffffff;
-    color: rgb(221, 221, 221);
+    background-color:#e3f1e8;
+    color: rgb(204, 204, 204);
     font-family: "Lucida Console", "Courier New", monospace;
     outline:black; 
-    border-radius:0.3em;
     z-index:1;
     border-width: 1px;
     height:45vh;
     width:6.3%;
+    border-top: 3px solid #86c232;
+    cursor: pointer;
+    box-shadow: 0 -9px 15px -8px rgba(0, 255, 0, 0.658);
 }
 
 
 button.drums {
   background-color:#cde7cec9;
+  font-family: "Lucida Console", "Courier New", monospace;
   box-shadow: 0px 5px 50px 10px rgb(126, 126, 126) inset;
-  color: rgba(26, 224, 69, 0.507);
+  color: rgba(112, 161, 122, 0.507);
   box-shadow: 0 0 8px 0 rgba(0, 255, 0, 0);
   outline:rgb(0, 0, 0); 
   border-radius:0.3em;
   z-index:1;
   border-width: 1px;
   transition: box-shadow 0.3s ease-in;
+  cursor: pointer;
 }
 button.drums:active{
   background-color:#00ff2aef;
@@ -134,32 +140,45 @@ button.drums:active{
 
 
 button.black:active{
-  background-color:#979797;
+  background-color:#6B6E70;
 }
 button.black:hover{
-  background-color:#0b200f;
+  background-color:rgb(32, 43, 20)
 
 }
 
 button.white:hover{
-  background-color:#d1fad6;
+  background-color:#bfe4bd;
 
 }
 
 
 button.white:active{
-  background-color:#979797;
+  background-color:#6B6E70;
 
 }
 
 
+.keybar{
+  display: flex;
+  width: 100%;
+  
+}
+.stylebutt {
+  float:right;
+  color: #86c232;
+  font-size: 22px;
+  border: none;
+  cursor: pointer;
+  margin-top: -2vh;
+}
 
 
 .dropbtn {
   margin-left: -4.5vh;
   margin-top: 5vh;
   padding:1.5vh;
-  color: white;
+  color: #86c232;
   font-size: 24px;
   border: none;
   cursor: pointer;
@@ -181,7 +200,7 @@ button.white:active{
   border: #005e14;
   display: none;
   position:absolute;
-  background-color: #000000;
+  background-color: #222629;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 
@@ -190,21 +209,21 @@ button.white:active{
   transform-origin: top center;
   z-index: 99;
   display: none;
-  background-color: #002508;
+  background-color: #6B6E70;
 }
 
 .dropdown-content a {
   outline-width: 2px;
   outline-color: #005e14;
   font-family: "Lucida Console", "Courier New", monospace;
-  color: white;
+  color: #86c232;
   margin: auto;
   padding: 5px 5px;
   text-decoration: none;
   display: flex;
 }
 
-.dropdown-content a:hover {background-color: rgba(221, 221, 221, 0.411)}
+.dropdown-content a:hover {background-color: #474B4F}
 
 #lowkey{
   transition: all .25s;
