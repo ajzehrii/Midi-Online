@@ -238,9 +238,9 @@ document.addEventListener('keyup', (event) => {
   }else if (keyName === '3'){
     document.getElementById("chi").style.background = "#9c9c9c";
   }else if (keyName === '4'){
-    document.getElementById("Clap").style.background = "#9c9c9c";
+    document.getElementById("Perc").style.background = "#9c9c9c";
   }else if (keyName === '5'){
-    document.getElementById("Clap").style.background = "#9c9c9c";
+    document.getElementById("ohi").style.background = "#9c9c9c";
   }else if (keyName === '6'){
     document.getElementById("Roll").style.background = "#9c9c9c";
   }
