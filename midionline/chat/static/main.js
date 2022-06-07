@@ -151,22 +151,22 @@ document.addEventListener('keydown', (event) => {
     octaveDown();
   }else if (keyName === '1'){
     playdrum('Kick');
-    document.getElementById("Kick").style.background = "#00ff2ad7";
+    document.getElementById("Kick").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '2'){
     playdrum('Clap');
-    document.getElementById("Clap").style.background = "#00ff2ad7";
+    document.getElementById("Clap").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '3'){
     playdrum('chi');
-    document.getElementById("chi").style.background = "#00ff2ad7";
+    document.getElementById("chi").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '4'){
     playdrum('Perc');
-    document.getElementById("Perc").style.background = "#00ff2ad7";
+    document.getElementById("Perc").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '5'){
     playdrum('ohi');
-    document.getElementById("ohi").style.background = "#00ff2ad7";
+    document.getElementById("ohi").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '6'){
     playdrum('Roll');
-    document.getElementById("Roll").style.background = "#00ff2ad7";
+    document.getElementById("Roll").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '7'){
     playloop("120")
   }else if (keyName === '8'){
@@ -182,67 +182,67 @@ document.addEventListener('keyup', (event) => {
   // As the user releases the Ctrl key, the key is no longer active,
   // so event.ctrlKey is false.
   if (keyName === 'a') {
-    document.getElementById("c").style.background = "#ffffff";
+    document.getElementById("c").style = "button.white";
   }else if (keyName === 'w') {
-    document.getElementById("c#").style.background = "#0a0a23";
+    document.getElementById("c#").style = "button.black";
   }else if (keyName === 's') {
-    document.getElementById("d").style.background = "#ffffff";
+    document.getElementById("d").style = "button.white";
   }else if (keyName === 'e') {
-    document.getElementById("d#").style.background = "#0a0a23";
+    document.getElementById("d#").style = "button.black";
   }else if (keyName === 'd') {
-    document.getElementById("e").style.background = "#ffffff";
+    document.getElementById("e").style = "button.white";
   }else if (keyName === 'f') {
-    document.getElementById("f").style.background = "#ffffff";
+    document.getElementById("f").style = "button.white";
   }else if (keyName === 't') {
-    document.getElementById("f#").style.background = "#0a0a23";
+    document.getElementById("f#").style = "button.black";
   }else if (keyName === 'g') {
-    document.getElementById("g").style.background = "#ffffff";
+    document.getElementById("g").style = "button.white";
   }else if (keyName === 'y') {
-    document.getElementById("g#").style.background = "#0a0a23";
+    document.getElementById("g#").style = "button.black";
   }else if (keyName === 'u') {
-    document.getElementById("a#").style.background = "#0a0a23";
+    document.getElementById("a#").style = "button.black";
   }else if (keyName === 'h') {
-    document.getElementById("a").style.background = "#ffffff";
+    document.getElementById("a").style = "button.white";
   }else if (keyName === 'j') {
-    document.getElementById("b").style.background = "#ffffff";
+    document.getElementById("b").style = "button.white";
   }else if (keyName === 'k') {
-    document.getElementById("c1").style.background = "#ffffff";
+    document.getElementById("c1").style = "button.white";
   }else if (keyName === 'o') {
-    document.getElementById("c#1").style.background = "#0a0a23";
+    document.getElementById("c#1").style = "button.black";
   }else if (keyName === 'l') {
-    document.getElementById("d1").style.background = "#ffffff";
+    document.getElementById("d1").style = "button.white";
   }else if (keyName === 'p') {
-    document.getElementById("d#1").style.background = "#0a0a23";
+    document.getElementById("d#1").style = "button.black";
   }else if (keyName === ';') {
-    document.getElementById("e1").style.background = "#ffffff";
+    document.getElementById("e1").style = "button.white";
   }else if (keyName === '\'') {
-    document.getElementById("f1").style.background = "#ffffff";
+    document.getElementById("f1").style = "button.white";
   }else if (keyName === ']') {
-    document.getElementById("f#1").style.background = "#0a0a23";
+    document.getElementById("f#1").style = "button.black";
   }else if (keyName === 'Enter') {
-    document.getElementById("g1").style.background = "#ffffff";
+    document.getElementById("g1").style = "button.white";
   }else if (keyName === '\\') {
-    document.getElementById("g#1").style.background = "#0a0a23";
+    document.getElementById("g#1").style = "button.black";
   }else if (keyName === '.') {
-    document.getElementById("a#1").style.background = "#0a0a23";
+    document.getElementById("a#1").style = "button.black";
   }else if (keyName === ',') {
-    document.getElementById("a1").style.background = "#ffffff";
+    document.getElementById("a1").style = "button.white";
   }else if (keyName === '/') {
-    document.getElementById("b1").style.background = "#ffffff";
+    document.getElementById("b1").style = "button.white";
   }else if (keyName === 'Shift') {
-    document.getElementById("c3").style.background = "#ffffff";
+    document.getElementById("c3").style = "button.white";
   }else if (keyName === '1'){
-    document.getElementById("Kick").style.background = "#9c9c9c";
+    document.getElementById("Kick").style = 'button.drums';
   }else if (keyName === '2'){
-    document.getElementById("Clap").style.background = "#9c9c9c";
+    document.getElementById("Clap").style = 'button.drums';
   }else if (keyName === '3'){
-    document.getElementById("chi").style.background = "#9c9c9c";
+    document.getElementById("chi").style = 'button.drums';
   }else if (keyName === '4'){
-    document.getElementById("Perc").style.background = "#9c9c9c";
+    document.getElementById("Perc").style = 'button.drums';
   }else if (keyName === '5'){
-    document.getElementById("ohi").style.background = "#9c9c9c";
+    document.getElementById("ohi").style = 'button.drums';
   }else if (keyName === '6'){
-    document.getElementById("Roll").style.background = "#9c9c9c";
+    document.getElementById("Roll").style = 'button.drums';
   }
 }, false);
 
@@ -300,7 +300,7 @@ function playloop (drum) {
   if (looppressed) {
     looppressed = false
     loopplayer.stop()
-    document.getElementById(drum).style.background = "#9c9c9c";
+    document.getElementById(drum).style = 'button.drums';
   }else{
     getSample("static/media/"+drum+".wav", function buff (buffer) {
       loopplayer = audioContext.createBufferSource()
@@ -309,7 +309,7 @@ function playloop (drum) {
       loopplayer.start(startTime)
       looppressed = true
 
-      document.getElementById(drum).style.background = "#00ff2ad7";
+      document.getElementById(drum).style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
 
       loopplayer.detune.value = 0 * 100
       loopplayer.playbackRate.value = Math.pow(2, 0 / 12)

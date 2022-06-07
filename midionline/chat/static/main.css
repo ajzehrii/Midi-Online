@@ -93,13 +93,11 @@ button.black {
     border-radius:0.2em;
     height:28vh;
     width:3.4%;
-    box-shadow: 20px 20px 50px 10px rgb(29, 29, 29) inset;
 }
 
 
 button.white {
     background-color:#ffffff;
-    box-shadow: 20px 20px 50px 10px rgb(250, 250, 250) inset;
     color: rgb(221, 221, 221);
     font-family: "Lucida Console", "Courier New", monospace;
     outline:black; 
@@ -112,30 +110,39 @@ button.white {
 
 
 button.drums {
-  background-color:#869b87;
-  box-shadow: 20px 20px 50px 10px rgb(126, 126, 126) inset;
-  color: rgba(2, 192, 43, 0.685);
-  outline:black; 
+  background-color:#cde7cec9;
+  box-shadow: 0px 5px 50px 10px rgb(126, 126, 126) inset;
+  color: rgba(26, 224, 69, 0.507);
+  box-shadow: 0 0 8px 0 rgba(0, 255, 0, 0);
+  outline:rgb(0, 0, 0); 
   border-radius:0.3em;
   z-index:1;
   border-width: 1px;
+  transition: box-shadow 0.3s ease-in;
 }
 button.drums:active{
-  background-color:#00ff2ad7;
-
+  background-color:#00ff2aef;
+  color:#00ff2a00;
+  outline:rgb(0, 255, 0); 
+  border-radius:0.3em;
+  z-index:1;
+  border-width: 1px;
+  transition: box-shadow 0.03s ease-in;
+  transition: background-color 0.03s ease-in;
+  box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset;
 }
+
 
 button.black:active{
-  background-color:#2c2c2c;
-
+  background-color:#979797;
 }
 button.black:hover{
-  background-color:#131313;
+  background-color:#0b200f;
 
 }
 
 button.white:hover{
-  background-color:#f0f0f0;
+  background-color:#d1fad6;
 
 }
 
