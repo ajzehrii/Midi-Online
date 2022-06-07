@@ -52,7 +52,7 @@ body{
   margin-left: 3px;
   margin-right: 3px;
   border:1px solid #160801;
-  background-color: #250101;
+  background-color: #009919c0;
   border-radius:1em;
   padding:4vh 0 0 5vh;
   box-shadow: 20px 20px 50px 10px rgb(0, 0, 0) inset;
@@ -117,7 +117,7 @@ button.drums {
   border-width: 1px;
 }
 button.drums:active{
-  background-color:#d10303d7;
+  background-color:#00ff2ad7;
 
 }
 

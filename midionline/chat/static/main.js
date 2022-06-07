@@ -151,22 +151,22 @@ document.addEventListener('keydown', (event) => {
     octaveDown();
   }else if (keyName === '1'){
     playdrum('Kick');
-    document.getElementById("Kick").style.background = "#d10303d7";
+    document.getElementById("Kick").style.background = "#00ff2ad7";
   }else if (keyName === '2'){
     playdrum('Clap');
-    document.getElementById("Clap").style.background = "#d10303d7";
+    document.getElementById("Clap").style.background = "#00ff2ad7";
   }else if (keyName === '3'){
     playdrum('chi');
-    document.getElementById("chi").style.background = "#d10303d7";
+    document.getElementById("chi").style.background = "#00ff2ad7";
   }else if (keyName === '4'){
     playdrum('Perc');
-    document.getElementById("Clap").style.background = "#d10303d7";
+    document.getElementById("Clap").style.background = "#00ff2ad7";
   }else if (keyName === '5'){
     playdrum('ohi');
-    document.getElementById("Clap").style.background = "#d10303d7";
+    document.getElementById("Clap").style.background = "#00ff2ad7";
   }else if (keyName === '6'){
     playdrum('Roll');
-    document.getElementById("Roll").style.background = "#d10303d7";
+    document.getElementById("Roll").style.background = "#00ff2ad7";
   }else if (keyName === '7'){
     playloop("120")
   }else if (keyName === '8'){
@@ -309,7 +309,7 @@ function playloop (drum) {
       loopplayer.start(startTime)
       looppressed = true
 
-      document.getElementById(drum).style.background = "#d10303d7";
+      document.getElementById(drum).style.background = "#00ff2ad7";
 
       loopplayer.detune.value = 0 * 100
       loopplayer.playbackRate.value = Math.pow(2, 0 / 12)
