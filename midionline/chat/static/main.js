@@ -160,10 +160,10 @@ document.addEventListener('keydown', (event) => {
     document.getElementById("chi").style.background = "#00ff2ad7";
   }else if (keyName === '4'){
     playdrum('Perc');
-    document.getElementById("Clap").style.background = "#00ff2ad7";
+    document.getElementById("Perc").style.background = "#00ff2ad7";
   }else if (keyName === '5'){
     playdrum('ohi');
-    document.getElementById("Clap").style.background = "#00ff2ad7";
+    document.getElementById("ohi").style.background = "#00ff2ad7";
   }else if (keyName === '6'){
     playdrum('Roll');
     document.getElementById("Roll").style.background = "#00ff2ad7";
