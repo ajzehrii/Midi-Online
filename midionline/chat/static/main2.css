@@ -87,21 +87,8 @@ button.scroll{
     min-width: 200px;
     cursor: pointer;
 }
-button.black {
-    margin:0;
-    background-color:#000000;
-    color: #303030;
-    margin:0 -1.7% 0 -1.7%;
-    border:none; 
-    font-family: "Lucida Console", "Courier New", monospace;
-    position: relative;
-    z-index:2;
-    height:28vh;
-    width:3.4%;
-    cursor: pointer;
-}
 
-button.blackr {
+button.black {
   margin:0;
   background-color:#e3f1e8;
   color:  rgb(204, 204, 204);
@@ -114,34 +101,23 @@ button.blackr {
   width:3.4%;
   cursor: pointer;
 }
-button.whiter {
+button.white {
   background-color:#000000;
   color:#303030;
   font-family: "Lucida Console", "Courier New", monospace;
-  outline:black; 
+  outline:#86c232; 
   z-index:1;
   border-width: 1px;
   height:45vh;
   width:6.3%;
   border-top: 3px solid #86c232;
+  border-bottom: 0.0001vh solid #86c2326e;
+  border-right: 0.005px solid #86c2326e;
+  border-left: 0.005px solid #86c2326e;
   cursor: pointer;
   box-shadow: 0 -9px 15px -8px rgba(0, 255, 0, 0.658);
 }
 
-
-button.white {
-    background-color:#e3f1e8;
-    color: rgb(204, 204, 204);
-    font-family: "Lucida Console", "Courier New", monospace;
-    outline:black; 
-    z-index:1;
-    border-width: 1px;
-    height:45vh;
-    width:6.3%;
-    border-top: 3px solid #86c232;
-    cursor: pointer;
-    box-shadow: 0 -9px 15px -8px rgba(0, 255, 0, 0.658);
-}
 
 
 button.drums {

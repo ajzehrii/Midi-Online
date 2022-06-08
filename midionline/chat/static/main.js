@@ -257,6 +257,68 @@ var player
 function end(){
   player.stop(audioContext.currentTime + 10)
 }
+
+
+var theme = "light"
+function styleChange(){
+  if (theme === "light"){
+    document.getElementById("pagestyle").setAttribute("href", 'static/main2.css');  
+    document.getElementById("c").style = "button.whiter";
+    document.getElementById("c#").style = "button.blackr";
+    document.getElementById("d").style = "button.whiter";
+    document.getElementById("d#").style = "button.blackr";
+    document.getElementById("e").style = "button.whiter";
+    document.getElementById("f").style = "button.whiter";
+    document.getElementById("f#").style = "button.blackr";
+    document.getElementById("g").style = "button.whiter";
+    document.getElementById("g#").style = "button.blackr";
+    document.getElementById("a#").style = "button.blackr";
+    document.getElementById("a").style = "button.whiter";
+    document.getElementById("b").style = "button.whiter";
+    document.getElementById("c1").style = "button.whiter";
+    document.getElementById("c#1").style = "button.blackr";
+    document.getElementById("d1").style = "button.whiter";
+    document.getElementById("d#1").style = "button.blackr";
+    document.getElementById("e1").style = "button.whiter";
+    document.getElementById("f1").style = "button.whiter";
+    document.getElementById("f#1").style = "button.blackr";
+    document.getElementById("g1").style = "button.whiter";
+    document.getElementById("g#1").style = "button.blackr";
+    document.getElementById("a#1").style = "button.blackr";
+    document.getElementById("a1").style = "button.whiter";
+    document.getElementById("b1").style = "button.whiter";
+    document.getElementById("c3").style = "button.whiter";
+    theme = "dark"
+  }else{
+    document.getElementById("pagestyle").setAttribute("href", 'static/main.css');  
+    document.getElementById("c").style = "button.white";
+    document.getElementById("c#").style = "button.black";
+    document.getElementById("d").style = "button.white";
+    document.getElementById("d#").style = "button.black";
+    document.getElementById("e").style = "button.white";
+    document.getElementById("f").style = "button.white";
+    document.getElementById("f#").style = "button.black";
+    document.getElementById("g").style = "button.white";
+    document.getElementById("g#").style = "button.black";
+    document.getElementById("a#").style = "button.black";
+    document.getElementById("a").style = "button.white";
+    document.getElementById("b").style = "button.white";
+    document.getElementById("c1").style = "button.white";
+    document.getElementById("c#1").style = "button.black";
+    document.getElementById("d1").style = "button.white";
+    document.getElementById("d#1").style = "button.black";
+    document.getElementById("e1").style = "button.white";
+    document.getElementById("f1").style = "button.white";
+    document.getElementById("f#1").style = "button.black";
+    document.getElementById("g1").style = "button.white";
+    document.getElementById("g#1").style = "button.black";
+    document.getElementById("a#1").style = "button.black";
+    document.getElementById("a1").style = "button.white";
+    document.getElementById("b1").style = "button.white";
+    document.getElementById("c3").style = "button.white";
+    theme = "light"
+  }
+}
 /*
 #61892F
 #86c232
