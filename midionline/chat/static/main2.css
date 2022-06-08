@@ -149,13 +149,13 @@ button.drums:active{
 button.black:active{
   background-color:#6B6E70;
 }
-button.black:hover{
-  background-color:rgb(32, 43, 20)
+button.black:hover{#bfe4bd
+  background-color:#bfe4bd;
 
 }
 
 button.white:hover{
-  background-color:#bfe4bd;
+  background-color:rgb(32, 43, 20);
 
 }
 
