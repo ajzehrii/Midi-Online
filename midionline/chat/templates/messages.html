@@ -9,8 +9,14 @@
   <script src="{% static 'main.js'%}"></script>
   <link id = "pagestyle" rel="stylesheet" href="{% static 'main.css'%}" media="screen">
 </head>
-<body>
+<body> 
+    <center>
     <div class = "hub">
+        <div class="screen">
+            <video autoplay muted loop id="myVideo">
+                <source src="{% static 'media/screen.mp4'%}" type="video/mp4">
+            </video>
+        </div>
         <div class="menu-container">
             <div class="button-container">
                <button id = "120" onclick="playloop('120')" class="drums">7</button>
@@ -25,6 +31,7 @@
             </div>
         </div>
     </div>
+    </center>
     <div id = "bet" class = "keyboard" onmousedown = "clicked()" onmouseup ="unclicked()">
         <div class = "keyhub">
             <div class ="keybar">

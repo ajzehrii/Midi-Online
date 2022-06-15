@@ -2,10 +2,13 @@ body{
   height: 100vh;
   overflow: hidden;
   margin: 0;
-  background-color: #17191b;
+  background-color: #000000;
 }
 
-
+#myVideo{
+  width: 56.9vh;
+  mix-blend-mode:color-burn;
+}
 
 
 #octave-select{
@@ -29,6 +32,8 @@ body{
 
 .hub{
   height: 45.5vh;
+  display: inline-flex;
+
 }
 .flex-gap {
   display: inline-flex;
@@ -59,10 +64,10 @@ body{
   height: 50vh;
   position:relative;
   margin:auto;
-  border-top:5px solid #17191b;
+  border-top:1px solid #00ff007e;
   background-color: #0a0b0c;
   padding:4vh 0 0 5vh;
-  box-shadow: 0px 20px 13px -9px #17191bd5 inset;
+  box-shadow: 0px 20px 13px -9px #000000d5 inset;
 }
 
 
@@ -87,24 +92,11 @@ button.scroll{
     min-width: 200px;
     cursor: pointer;
 }
-button.black {
-    margin:0;
-    background-color:#000000;
-    color: #303030;
-    margin:0 -1.7% 0 -1.7%;
-    border:none; 
-    font-family: "Lucida Console", "Courier New", monospace;
-    position: relative;
-    z-index:2;
-    height:28vh;
-    width:3.4%;
-    cursor: pointer;
-}
 
-button.blackr {
+button.black {
   margin:0;
-  background-color:#e3f1e8;
-  color:  rgb(204, 204, 204);
+  background-color:#000000;
+  color: #303030;
   margin:0 -1.7% 0 -1.7%;
   border:none; 
   font-family: "Lucida Console", "Courier New", monospace;
@@ -114,9 +106,38 @@ button.blackr {
   width:3.4%;
   cursor: pointer;
 }
+
+button.blackr {
+margin:0;
+background-color:#e3f1e8;
+color:  rgb(204, 204, 204);
+margin:0 -1.7% 0 -1.7%;
+border:none; 
+font-family: "Lucida Console", "Courier New", monospace;
+position: relative;
+z-index:2;
+height:28vh;
+width:3.4%;
+cursor: pointer;
+}
 button.whiter {
-  background-color:#000000;
-  color:#303030;
+background-color:#000000;
+color:#303030;
+font-family: "Lucida Console", "Courier New", monospace;
+outline:black; 
+z-index:1;
+border-width: 1px;
+height:45vh;
+width:6.3%;
+border-top: 3px solid #86c232;
+cursor: pointer;
+box-shadow: 0 -9px 15px -8px rgba(0, 255, 0, 0.658);
+}
+
+
+button.white {
+  background-color:#e3f1e8;
+  color: rgb(204, 204, 204);
   font-family: "Lucida Console", "Courier New", monospace;
   outline:black; 
   z-index:1;
@@ -128,20 +149,6 @@ button.whiter {
   box-shadow: 0 -9px 15px -8px rgba(0, 255, 0, 0.658);
 }
 
-
-button.white {
-    background-color:#e3f1e8;
-    color: rgb(204, 204, 204);
-    font-family: "Lucida Console", "Courier New", monospace;
-    outline:black; 
-    z-index:1;
-    border-width: 1px;
-    height:45vh;
-    width:6.3%;
-    border-top: 3px solid #86c232;
-    cursor: pointer;
-    box-shadow: 0 -9px 15px -8px rgba(0, 255, 0, 0.658);
-}
 
 
 button.drums {
@@ -174,12 +181,12 @@ button.black:active{
   background-color:#6B6E70;
 }
 button.black:hover{
-  background-color:rgb(32, 43, 20)
+  background-color:#bfe4bd;
 
 }
 
 button.white:hover{
-  background-color:#bfe4bd;
+  background-color:rgb(32, 43, 20);
 
 }
 
@@ -283,4 +290,9 @@ button.white:active{
   100% {
     transform: scaleY(1)
   }
+}
+
+
+.screen{
+  background: #86c232;
 }
