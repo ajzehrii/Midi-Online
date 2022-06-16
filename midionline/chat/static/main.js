@@ -19,7 +19,7 @@ function loadkeys() {
 }
 
 //check if mouse is pressed
-var mouseDown = 0;
+var mouseDown = 1;
 function clicked() { 
   mouseDown = 1;
 }
@@ -68,7 +68,6 @@ var instrument = 'static/media/Grand.mp3'
 
 var player
 document.addEventListener('keydown', (event) => {
-  mouseDown = 1;
   const keyName = event.key;
 
   if (event.repeat) { return }
@@ -218,9 +217,6 @@ document.addEventListener('keydown', (event) => {
 
 document.addEventListener('keyup', (event) => {
   const keyName = event.key;
-  mouseDown = 0;
-  // As the user releases the Ctrl key, the key is no longer active,
-  // so event.ctrlKey is false.
   if (keyName === 'a') {
     document.getElementById('myVideo').playbackRate = 1;
     document.getElementById("c").style = "button.white";
@@ -333,7 +329,7 @@ function keytap2(frequency){
 
 
 function end(){
-  player.stop(audioContext.currentTime)
+  player.stop(audioContext.currentTime+10)
 }
 
 

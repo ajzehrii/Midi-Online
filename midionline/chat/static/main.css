@@ -16,6 +16,7 @@ body{
   mix-blend-mode:color-burn;
 }
 .screen{
+  width: 56.9vh;
   background: #86c232;
 }
 
