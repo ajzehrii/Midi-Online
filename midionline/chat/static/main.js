@@ -19,7 +19,7 @@ function loadkeys() {
 }
 
 //check if mouse is pressed
-var mouseDown = 1;
+var mouseDown = 0;
 function clicked() { 
   mouseDown = 1;
 }

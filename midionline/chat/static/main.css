@@ -14,9 +14,10 @@ body{
 #myVideo{
   width: 56.9vh;
   mix-blend-mode:color-burn;
+  margin-left: -.6vh;
 }
 .screen{
-  width: 56.9vh;
+  width: 56vh;
   background: #86c232;
 }
 
