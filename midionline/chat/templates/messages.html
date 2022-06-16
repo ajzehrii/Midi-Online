@@ -8,10 +8,24 @@
   <title>Midi Maker Online</title>
   <script src="{% static 'main.js'%}"></script>
   <link id = "pagestyle" rel="stylesheet" href="{% static 'main.css'%}" media="screen">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 </head>
 <body> 
-    <center>
     <div class = "hub">
+        <div class="other">
+            
+            <div id = "settingm">
+                <label class="switch">
+                    <input type="checkbox">🕰
+                    <span onclick= "metro()" class="slider" title ="🕰">🕰</span>
+                </label>
+                <div id="bpslide">
+                    <button class='scroll2' onclick="bpmDown()"> < </button>
+                    <h2 id = 'bpm'>130</h2><h5>bpm</h5>
+                    <button class='scroll2' onclick="bpmUp()"> > </button>
+                </div>
+            </div>
+        </div>
         <div class="screen">
             <video autoplay muted loop id="myVideo">
                 <source src="{% static 'media/screen.mp4'%}" type="video/mp4">
@@ -31,7 +45,7 @@
             </div>
         </div>
     </div>
-    </center>
+
     <div id = "bet" class = "keyboard" onmousedown = "clicked()" onmouseup ="unclicked()">
         <div class = "keyhub">
             <div class ="keybar">

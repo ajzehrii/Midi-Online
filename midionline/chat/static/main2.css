@@ -10,6 +10,10 @@ body{
   mix-blend-mode:color-burn;
 }
 
+.other{
+  width: 50vh;
+}
+
 
 #octave-select{
   display: flex;

@@ -64,110 +64,112 @@ function keyslide2(frequency){
       play(oct2,frequency)
   }
 }
+var instrument = 'static/media/Grand.mp3'
 
-
-
+var player
 document.addEventListener('keydown', (event) => {
+  mouseDown = 1;
   const keyName = event.key;
 
+  if (event.repeat) { return }
   if (keyName === 'a') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(0)
     document.getElementById("c").style.background = "#6B6E70";
   }else if (keyName === 'w') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(1)
     document.getElementById("c#").style.background = "#6B6E70";
   }else if (keyName === 's') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(2)
     document.getElementById("d").style.background = "#6B6E70";
   }else if (keyName === 'e') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(3)
     document.getElementById("d#").style.background = "#6B6E70";
   }else if (keyName === 'd') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(4)
     document.getElementById("e").style.background = "#6B6E70";
   }else if (keyName === 'f') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(5)
     document.getElementById("f").style.background = "#6B6E70";
   }else if (keyName === 't') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(6)
     document.getElementById("f#").style.background = "#6B6E70";
   }else if (keyName === 'g') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(7)
     document.getElementById("g").style.background = "#6B6E70";
   }else if (keyName === 'y') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(8)
     document.getElementById("g#").style.background = "#6B6E70";
   }else if (keyName === 'u') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(10)
     document.getElementById("a#").style.background = "#6B6E70";
   }else if (keyName === 'h') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(9)
     document.getElementById("a").style.background = "#6B6E70";
   }else if (keyName === 'j') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap(11)
     document.getElementById("b").style.background = "#6B6E70";
   }else if (keyName === 'k') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(0)
     document.getElementById("c1").style.background = "#6B6E70";
   }else if (keyName === 'o') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(1)
     document.getElementById("c#1").style.background = "#6B6E70";
   }else if (keyName === 'l') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(2)
     document.getElementById("d1").style.background = "#6B6E70";
   }else if (keyName === 'p') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(3)
     document.getElementById("d#1").style.background = "#6B6E70";
   }else if (keyName === ';') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(4)
     document.getElementById("e1").style.background = "#6B6E70";
   }else if (keyName === '\'') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(5)
     document.getElementById("f1").style.background = "#6B6E70";
   }else if (keyName === ']') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(6)
     document.getElementById("f#1").style.background = "#6B6E70";
   }else if (keyName === 'Enter') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(7)
     document.getElementById("g1").style.background = "#6B6E70";
   }else if (keyName === '\\') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(8)
     document.getElementById("g#1").style.background = "#6B6E70";
   }else if (keyName === '.') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(10)
     document.getElementById("a#1").style.background = "#6B6E70";
   }else if (keyName === ',') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(9)
     document.getElementById("a1").style.background = "#6B6E70";
   }else if (keyName === '/') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(11)
     document.getElementById("b1").style.background = "#6B6E70";
   }else if (keyName === 'Shift') {
-    document.getElementById('myVideo').playbackRate = 3.0;
+    document.getElementById('myVideo').playbackRate = 4.0;
     keytap2(12)
     document.getElementById("c3").style.background = "#6B6E70";
   }else if (keyName === 'ArrowRight'){
@@ -175,33 +177,33 @@ document.addEventListener('keydown', (event) => {
   }else if (keyName === 'ArrowLeft'){
     octaveDown();
   }else if (keyName === '1'){
-    document.getElementById('myVideo').playbackRate = 4.0;
-    document.getElementById('myVideo').style ="mix-blend-mode:normal;"
+    document.getElementById('myVideo').playbackRate = 5.0;
+    
     playdrum('Kick');
     document.getElementById("Kick").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '2'){
-    document.getElementById('myVideo').playbackRate = 4.0;
-    document.getElementById('myVideo').style ="mix-blend-mode:normal;"
+    document.getElementById('myVideo').playbackRate = 5.0;
+    
     playdrum('Clap');
     document.getElementById("Clap").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '3'){
-    document.getElementById('myVideo').playbackRate = 4.0;
-    document.getElementById('myVideo').style ="mix-blend-mode:normal;"
+    document.getElementById('myVideo').playbackRate = 5.0;
+    
     playdrum('chi');
     document.getElementById("chi").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '4'){
-    document.getElementById('myVideo').playbackRate = 4.0;
-    document.getElementById('myVideo').style ="mix-blend-mode:normal;"
+    document.getElementById('myVideo').playbackRate = 5.0;
+    
     playdrum('Perc');
     document.getElementById("Perc").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '5'){
-    document.getElementById('myVideo').playbackRate = 4.0;
-    document.getElementById('myVideo').style ="mix-blend-mode:normal;"
+    document.getElementById('myVideo').playbackRate = 5.0;
+    
     playdrum('ohi');
     document.getElementById("ohi").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '6'){
-    document.getElementById('myVideo').playbackRate = 4.0;
-    document.getElementById('myVideo').style ="mix-blend-mode:normal;"
+    document.getElementById('myVideo').playbackRate = 5.0;
+    
     playdrum('Roll');
     document.getElementById("Roll").style="background-color:#00ff2aef; color:#00ff2a00; outline:rgb(0, 255, 0); border-radius:0.3em; z-index:1; border-width: 1px; box-shadow: 0 0 15px 0 rgba(0, 255, 0, 0.658), 0px 5px 50px 5px rgb(126, 126, 126) inset; transition: box-shadow 0.03s ease-in; ";
   }else if (keyName === '7'){
@@ -211,11 +213,12 @@ document.addEventListener('keydown', (event) => {
   }else if (keyName === '9'){
     playloop("150")
   }
+  document.getElementById("bet").style="position:absolute; top:45%; bottom:0; width: 100%; margin:auto; border-top:1px solid #57f157da; background-color: #0a0b0c; padding:4vh 0 0 5vh; box-shadow: 0px 20px 28px -19px #00ff0058 inset; transition: box-shadow 0.02s ease-in;"
 }, false);
 
 document.addEventListener('keyup', (event) => {
   const keyName = event.key;
-
+  mouseDown = 0;
   // As the user releases the Ctrl key, the key is no longer active,
   // so event.ctrlKey is false.
   if (keyName === 'a') {
@@ -318,6 +321,7 @@ document.addEventListener('keyup', (event) => {
     document.getElementById('myVideo').style ="mix-blend-mode:color-burn;"
     document.getElementById("Roll").style = 'button.drums';
   }
+  document.getElementById("bet").style= "keyboard";
 }, false);
 
 function keytap(frequency){
@@ -326,10 +330,10 @@ function keytap(frequency){
 function keytap2(frequency){
   play (oct2,frequency)
 }
-var player
+
 
 function end(){
-  player.stop(audioContext.currentTime + 10)
+  player.stop(audioContext.currentTime)
 }
 
 
@@ -406,7 +410,7 @@ function styleChange(){
 #F2F2F2
 
 */
-var instrument = 'static/media/Grand.mp3'
+
 
 function play (pitch,frequency) {
   getSample(instrument, function buff (buffer) {
@@ -521,4 +525,117 @@ function filterFunction() {
   }
 }
 
+var bpm = 130;
+var metron ="off"
 
+
+this.reset = function(newT = t) {
+  t = newT;
+  return this.stop().start();
+}
+function metro(){
+  if (metron === "on"){
+    metron= "off"
+    console.log(metron)
+  }else{
+    metron ="on"
+    console.log(metron)
+  }
+}
+
+count = 0;
+var interval = setInterval(function() {
+  if (metron === "off"){
+
+  }else{
+    getSample("static/media/temp.mp3", function buff (buffer) {
+      loopplayer = audioContext.createBufferSource()
+      loopplayer.buffer = buffer
+      loopplayer.connect(audioContext.destination)
+      loopplayer.start(startTime)
+
+      if(count != 0){
+        loopplayer.detune.value = -5 * 100
+        loopplayer.playbackRate.value = Math.pow(2, 0 / 12)
+      }else{
+        loopplayer.detune.value = 0 * 100
+        loopplayer.playbackRate.value = Math.pow(2, 0 / 12)
+      }
+
+      if (count == 3){
+        count = 0
+      }else{
+        count +=1
+      }
+    })
+  }
+}, (60 * 1000) / bpm);
+
+
+
+
+function bpmDown(){
+  let messagesHtml = `<button class='scroll2' onclick="bpmDown()"> < </button> <h2 id = 'bpm'>${--bpm} </h2><h5>bpm</h5> <button class='scroll2' onclick="bpmUp()"> > </button>`;
+  let messages = document.getElementById("bpslide");
+  messages.innerHTML = messagesHtml;
+  clearInterval(interval);
+  interval = setInterval(function() {
+    if (metron === "off"){
+  
+    }else{
+      getSample("static/media/temp.mp3", function buff (buffer) {
+        loopplayer = audioContext.createBufferSource()
+        loopplayer.buffer = buffer
+        loopplayer.connect(audioContext.destination)
+        loopplayer.start(startTime)
+  
+        if(count != 0){
+          loopplayer.detune.value = -5 * 100
+          loopplayer.playbackRate.value = Math.pow(2, 0 / 12)
+        }else{
+          loopplayer.detune.value = 0 * 100
+          loopplayer.playbackRate.value = Math.pow(2, 0 / 12)
+        }
+  
+        if (count == 3){
+          count = 0
+        }else{
+          count +=1
+        }
+      })
+    }
+  }, (60 * 1000) / bpm);
+}
+
+function bpmUp(){
+  let messagesHtml = `<button class='scroll2' onclick="bpmDown()"> < </button> <h2 id = 'bpm'>${++bpm} </h2><h5>bpm</h5> <button class='scroll2' onclick="bpmUp()"> > </button>`;
+  let messages = document.getElementById("bpslide");
+  messages.innerHTML = messagesHtml;
+  clearInterval(interval);
+  interval = setInterval(function() {
+    if (metron === "off"){
+  
+    }else{
+      getSample("static/media/temp.mp3", function buff (buffer) {
+        loopplayer = audioContext.createBufferSource()
+        loopplayer.buffer = buffer
+        loopplayer.connect(audioContext.destination)
+        loopplayer.start(startTime)
+  
+        if(count != 0){
+          loopplayer.detune.value = -5 * 100
+          loopplayer.playbackRate.value = Math.pow(2, 0 / 12)
+        }else{
+          loopplayer.detune.value = 0 * 100
+          loopplayer.playbackRate.value = Math.pow(2, 0 / 12)
+        }
+  
+        if (count == 3){
+          count = 0
+        }else{
+          count +=1
+        }
+      })
+    }
+  }, (60 * 1000) / bpm);
+}
