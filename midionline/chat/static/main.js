@@ -30,7 +30,7 @@ function unclicked() {
 var oct1 = -12
 var oct2 = 0
 var octave = 0
-
+ 
 function octaveDown(){
   let messagesHtml = `<button class='scroll' onclick="octaveDown()"> < </button><h2> ${--octave} </h2><button class='scroll' onclick="octaveUp()"> > </button>`;
   let messages = document.getElementById("octave-select");
